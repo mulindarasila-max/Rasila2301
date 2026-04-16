@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mulinda's Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievement">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-img">
+        <img src="WhatsApp Image 2026-04-12 at 02.08.13.jpeg" alt="profile picture">
+    </div>
+
+    <h1>CYBERSECURITY</h1>
+    <p>Building clean systems. Thinking beyond the code.</p>
+    <button onclick="showMessage()">View Portfolio below</button>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am Rasila Mulinda, a second-year Computer Science student at the University of Venda with a passion for cybersecuriy analysis and problem-solving through code. I work primarily with HTML,java, CSS, C++, and have foundational knowledge of JavaScript, with a growing focus on the protection of organization's computer networks,systems and data from cyber attacks. I enjoy building small, practical projects that strengthen my understanding of real-world software systems. In 2025, I participated in a Hackathon and also took 3rd place in a Maths Marathon, showcasing both my technical and analytical skills. I have also participated in the Telkom Hackathon, gaining valuable experience in collaborative problem-solving and innovation. Currently, in 2026, I serve as a Maths mentor, helping others develop strong problem-solving abilities while strengthening my leadership and communication skills.
+
+My goal is to grow into a skilled cybersecurity analyst who develops secure, impactful, and scalable technology solutions.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>C++</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Simple Calculator</h3>
+        <p>A Java-based arithmetic calculator that performs core mathematical operations including addition, subtraction, multiplication, and division. Designed with clean logic structure to strengthen understanding of object-oriented programming and user input handling. Built to improve problem-solving efficiency and foundational backend logic design.<br>
+        Tools used: Java</p>
+    </div>
+
+    <div class="project-card">
+        <h3>My personal Portfolio</h3>
+        <p>This project is a personal portfolio website that showcases my skills, projects, and professional background as a computer science student. The website includes sections such as Home, About Me, Projects, and Contact Information.<br>
+        Tools used: HTML,JavaScript,CSS</p>
+    </div>
+</section>
+
+<section id="achievement">
+    <h2>Achievements</h2>
+    <ul>
+        <li>3rd Place – Maths Marothon (2025)</li>
+        <li> participated in Telkom 2025 Hackerthon</li>
+        <li>Currently a mentor for Maths </li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-card" onclick="openContactForm()">
+    <div class="icon">📧</div>
+    <p>Email Me</p>
+</div>
+        <a href="mailto:mulindarasila@gmail.com"target="_blank" class="contact-card">
+        <div class ="icon">📧</div>
+        <p>My personal Email</p>
+        </a>
+
+        <a href="https://github.com/mulindarasila-max" target="_blank" class="contact-card">
+            <div class="icon">💻</div>
+            <p>GitHub</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mulinda-rasila-42963936a?trk=contact-info" target="_blank" class="contact-card">
+            <div class="icon">🔗</div>
+            <p>LinkedIn</p>
+        </a>
+
+        <div class="contact-card">
+            <div class="icon">📱</div>
+            <p>0674830072</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="Likes">
+    <h2>Likes</h2>
+    <ul>
+        <li>Problem Solving</li>
+        <li>Building Systems</li>
+        <li>Web Development</li>
+    </ul>
+
+</section>
+
+
+<footer>
+    <p>©️ 2026  Rasila Mulinda| Built with discipline & code</p>
+</footer>
+
+<script src="script.js"></script>
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+
+        <h2>Send Me a Message</h2>
+
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button onclick="sendMessage()">Send</button>
+        <button class="close-btn" onclick="closeContactForm()">Close</button>
+
+    </div>
+</div>
+</body>
+</html>
